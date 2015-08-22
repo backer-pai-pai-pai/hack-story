@@ -39,4 +39,15 @@
 </div><!-- /.row -->
 </div>
 
-<%= link_to "new item", new_project_project_item_path(@project) %>
+
+<%= simple_form_for [@project, @item] do |f| %>
+  <%= f.input :position %>
+  <%= f.input :excerpt %>
+
+  <%= f.simple_fields_for :images, @item.images.new do |image_form| %>
+    <%= image_form.input :item_photo, as: :file %>
+  <% end %>
+
+  <%= f.button :submit %>
+<% end %>
+

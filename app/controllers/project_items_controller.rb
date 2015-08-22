@@ -27,12 +27,7 @@ class ProjectItemsController < ApplicationController
   private
 
   def item_params
-    params.
-      require(:project_item).
-      permit(
-        %i(position excerpt),
-        images_attributes: %i(item_photo)
-      )
+    params.require(:project_item).permit(:position, :excerpt, images_attributes: [:id, :item_photo])
   end
 
   def get_project
