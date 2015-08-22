@@ -9,3 +9,15 @@
   height: auto;
   overflow: hidden;
 }
+
+.header-bar {margin:-23px 0 23px 0; height:120px; line-height:76px; border-radius:9px 9px 0 0; -moz-border-radius:9px 9px 0 0; -webkit-border-radius:9px 9px 0 0; border-bottom: 1px solid rgba(0, 0, 0, 0.10);  }
+.header-bar img {vertical-align:middle}
+#ible-header .header-bar img {vertical-align:top}
+.header-bar .header-title {color:#333; display:inline-block; *display:inline; *zoom:1; font-family:CompleteInHimPro,Arial,Helvetica,sans-serif; font-size:36px; font-weight:normal; margin-left:10px;}
+.header-bar, .header-gradient {
+  background: #f6f6f6 none repeat scroll 0 0;
+}
+
+div.project-container {position:relative; min-height:100px; width:1016px; margin:0 auto; padding:23px 0; background:#fff; border-radius:9px; -moz-border-radius:9px; -webkit-border-radius:9px; border:1px solid rgba(119,130,135,.4)}
+div.project-container:after {content: "."; display:block; height:0; clear:both; visibility:hidden}
+.lt-ie9 div#omni {background:#fff}
