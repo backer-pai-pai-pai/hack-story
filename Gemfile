@@ -15,6 +15,8 @@ gem "cocoon"
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 
+gem "rest-client"
+
 gem "devise"
 gem "omniauth"
 gem "omniauth-facebook"
