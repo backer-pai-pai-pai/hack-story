@@ -3,6 +3,7 @@
 <head>
   <title>HackStory</title>
   <%= stylesheet_link_tag "application", params[:controller] %>
+  <%= yield :custom_css %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -10,5 +11,6 @@
   <%= yield %>
   <%= render partial: "layouts/footer" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= yield :custom_js %>
 </body>
 </html>

@@ -7,6 +7,7 @@
 
 .carousel-inner > .item{
   max-height: 750px;
+  margin-top: -15px;
 }
 .carousel-inner > .item > img, .project_card img{
   width: 100%;
@@ -198,3 +199,59 @@ footer{
 footer i{
   margin: 5px;
 }
+<<<<<<< Updated upstream
+=======
+
+//---------------------
+#item_selector{
+  width: 40px;
+  z-index: 10;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+.dot {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: #0073aa;
+  margin: 1em 0;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+.dot::before{
+  content: '';
+  position: absolute;
+  top: -2em;
+  left: .9em;
+  width: .2em;
+  height: 4em;
+  background: #0073aa;
+  z-index: -1;
+}
+
+
+.dot:first-child::before {
+  display: none;
+}
+
+.active {
+  background: #0073aa;
+  margin: .9em -.1em;
+  font-size: 16px;
+}
+.active::before{
+  width: .15em;
+}
+
+.active ~ .dot {
+  background: rgb(127, 198, 232);
+}
+
+.active ~ .dot::before {
+  background: rgb(127, 198, 232);
+}
+>>>>>>> Stashed changes
