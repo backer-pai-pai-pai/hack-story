@@ -22,6 +22,9 @@
 }
 .project_card{
   overflow: hidden;
+  width: 95%;
+  height: 0;
+  padding-bottom: 100%;
 }
 
 .header-bar {margin:-23px 0 23px 0; height:120px; line-height:76px; border-radius:9px 9px 0 0; -moz-border-radius:9px 9px 0 0; -webkit-border-radius:9px 9px 0 0; border-bottom: 1px solid rgba(0, 0, 0, 0.10);  }
@@ -35,7 +38,6 @@
 div.project-container {position:relative; min-height:100px; width:1016px; margin:0 auto; padding:23px 0; background:#fff; border-radius:9px; -moz-border-radius:9px; -webkit-border-radius:9px; border:1px solid rgba(119,130,135,.4)}
 div.project-container:after {content: "."; display:block; height:0; clear:both; visibility:hidden}
 .lt-ie9 div#omni {background:#fff;
-
   width: 95%;
   height: 0;
   padding-bottom: 100%;
@@ -199,59 +201,46 @@ footer{
 footer i{
   margin: 5px;
 }
-<<<<<<< Updated upstream
-=======
-
-//---------------------
-#item_selector{
-  width: 40px;
-  z-index: 10;
-  position: fixed;
-  top: 100px;
-  right: 10px;
+.project_show_container{
+  margin-top: 100px;
 }
-.dot {
-  width: 2em;
-  height: 2em;
+.header-bar{
   text-align: center;
-  line-height: 2em;
-  border-radius: 1em;
-  background: #0073aa;
-  margin: 1em 0;
-  display: inline-block;
-  color: white;
-  position: relative;
+  border-bottom: 0;
+  color: rgb(127, 198, 232);
+  border-radius: 30px;
 }
-.dot::before{
-  content: '';
-  position: absolute;
-  top: -2em;
-  left: .9em;
-  width: .2em;
-  height: 4em;
-  background: #0073aa;
-  z-index: -1;
+.header-title{
+  color: #2bde73 !important;
+  font-weight: bold;
 }
-
-
-.dot:first-child::before {
-  display: none;
+.item_image{
+  width: 100%;
 }
-
-.active {
-  background: #0073aa;
-  margin: .9em -.1em;
-  font-size: 16px;
+.project_item_card{
+  border-radius: 20px;
+  border: 2px solid #ddd;
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
-.active::before{
-  width: .15em;
+.item_description{
+  padding: 0;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 10px 0px;
 }
-
-.active ~ .dot {
-  background: rgb(127, 198, 232);
+.item_like{
+  margin: 10px 0px;
+  font-size: 18px;
+  color: #2AB3F5;
+  font-weight: bold;
 }
-
-.active ~ .dot::before {
-  background: rgb(127, 198, 232);
+.item_like i{
+  margin: 5px;
 }
->>>>>>> Stashed changes
+.fa-heart-o, .fa-share{
+  color: initial;
+}
+.fa-heart {
+  color: red;
+}
