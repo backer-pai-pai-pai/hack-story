@@ -1,0 +1,8 @@
+.carousel-inner > .item{
+  max-height: 750px;
+}
+.carousel-inner > .item > img{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
