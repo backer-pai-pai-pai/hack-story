@@ -37,6 +37,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+<<<<<<< HEAD
     autoprefixer-rails (5.2.1.2)
       execjs
       json
@@ -45,6 +46,9 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
+=======
+    bcrypt (3.1.10)
+>>>>>>> Create all we need now
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-kaminari-views (0.0.5)
@@ -60,8 +64,11 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+<<<<<<< HEAD
     cocoon (1.2.6)
     coderay (1.1.0)
+=======
+>>>>>>> Create all we need now
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -70,7 +77,11 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     debug_inspector (0.0.2)
+<<<<<<< HEAD
     devise (3.5.2)
+=======
+    devise (3.5.1)
+>>>>>>> Create all we need now
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -106,7 +117,11 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
+<<<<<<< HEAD
     mini_magick (4.2.10)
+=======
+    mini_magick (4.1.0)
+>>>>>>> Create all we need now
     mini_portile (0.6.2)
     minitest (5.8.0)
     multi_json (1.11.2)
@@ -114,6 +129,7 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+<<<<<<< HEAD
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -128,6 +144,8 @@ GEM
     omniauth-oauth2 (1.3.1)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
+=======
+>>>>>>> Create all we need now
     orm_adapter (0.5.0)
     pg (0.18.2)
     rack (1.6.4)
@@ -191,7 +209,10 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+<<<<<<< HEAD
     unicode-display_width (0.1.1)
+=======
+>>>>>>> Create all we need now
     warden (1.2.3)
       rack (>= 1.0)
     web-console (2.2.1)
@@ -210,6 +231,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   carrierwave
+<<<<<<< HEAD
   cocoon
   coffee-rails (~> 4.1.0)
   devise
@@ -219,6 +241,13 @@ DEPENDENCIES
   kaminari
   mini_magick
   omniauth-facebook
+=======
+  coffee-rails (~> 4.1.0)
+  devise
+  jbuilder (~> 2.0)
+  jquery-rails
+  mini_magick
+>>>>>>> Create all we need now
   pg
   rails (= 4.2.3)
   sass-rails (~> 5.0)
