@@ -23,6 +23,7 @@ gem "omniauth-facebook"
 
 gem "carrierwave"
 gem "mini_magick"
+gem "fog", require: "fog/aws/storage" # integrated with uploader and S3
 
 group :development, :test do
   gem "byebug"
@@ -30,5 +31,6 @@ group :development, :test do
   gem "spring"
   gem "hirb-unicode"
   gem "better_errors"
+  gem "pry-rails"
 end
 
