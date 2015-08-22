@@ -5,6 +5,9 @@
   max-height: 750px;
 }
 
+.carousel-inner > .item{
+  max-height: 750px;
+}
 .carousel-inner > .item > img{
   width: 100%;
   height: auto;
@@ -22,5 +25,4 @@
 div.project-container {position:relative; min-height:100px; width:1016px; margin:0 auto; padding:23px 0; background:#fff; border-radius:9px; -moz-border-radius:9px; -webkit-border-radius:9px; border:1px solid rgba(119,130,135,.4)}
 div.project-container:after {content: "."; display:block; height:0; clear:both; visibility:hidden}
 .lt-ie9 div#omni {background:#fff}
-
 
