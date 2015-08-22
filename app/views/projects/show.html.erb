@@ -10,7 +10,14 @@
         <div class="row">
           <%= image_tag "https://ksr-ugc.imgix.net/projects/1510971/photo-original.jpg?v=1434483447&w=1536&h=1152&fit=crop&auto=format&q=92&s=13185e35776ca29914ad07c07d6fab10", class: "item_image" %>
         </div>
-        <div class="row item_like"><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i>999<i class="fa fa-share"></i></div>
+        <div class="row item_bar">
+          <div class="col-xs-6 item_like">
+            <i class="fa fa-heart-o"></i>999<i class="fa fa-share"></i>999
+          </div>
+          <div class="col-xs-6 item_date">
+            2015/8/22 12:00
+          </div>
+        </div>
         <div class="row item_description">
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -26,7 +33,14 @@
         <div class="row">
           <%= image_tag "https://ksr-ugc.imgix.net/projects/1510971/photo-original.jpg?v=1434483447&w=1536&h=1152&fit=crop&auto=format&q=92&s=13185e35776ca29914ad07c07d6fab10", class: "item_image" %>
         </div>
-        <div class="row item_like"><i class="fa fa-heart"></i><i class="fa fa-heart-o"></i>999<i class="fa fa-share"></i></div>
+        <div class="row item_bar">
+          <div class="col-xs-6 item_like">
+            <i class="fa fa-heart-o"></i>999<i class="fa fa-share"></i>999
+          </div>
+          <div class="col-xs-6 item_date">
+            2015/8/22 12:00
+          </div>
+        </div>
         <div class="row item_description">
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -40,3 +54,17 @@
 </div>
 
 <%= link_to "new item", new_project_project_item_path(@project) %>
+<% content_for :custom_js do %>
+<script type="text/javascript">
+  $('.fa-heart-o, .fa-heart').click(function(){
+    if($(this).hasClass('fa-heart')){
+      $(this).addClass('fa-heart-o');
+      $(this).removeClass('fa-heart');
+    }
+    else if($(this).hasClass('fa-heart-o')){
+      $(this).addClass('fa-heart');
+      $(this).removeClass('fa-heart-o');
+    }
+  })
+</script>
+<% end %>

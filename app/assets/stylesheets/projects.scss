@@ -230,7 +230,6 @@ footer i{
   margin: 10px 0px;
 }
 .item_like{
-  margin: 10px 0px;
   font-size: 18px;
   color: #2AB3F5;
   font-weight: bold;
@@ -241,6 +240,18 @@ footer i{
 .fa-heart-o, .fa-share{
   color: initial;
 }
+.fa-share{
+  margin-left: 40px !important;
+}
 .fa-heart {
   color: red;
+}
+.item_date{
+  font-size: 18px;
+  color: #aaa;
+  text-shadow: 2px 2px #ddd;
+  text-align: right;
+}
+.item_bar{
+  margin: 10px 0px;
 }
