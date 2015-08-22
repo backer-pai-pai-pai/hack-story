@@ -1,0 +1,10 @@
+<%= simple_form_for [@project, @item] do |f| %>
+  <%= f.input :position %>
+  <%= f.input :excerpt %>
+  <%= f.simple_fields_for :images do |image_form| %>
+    <%= image_form.input :item_photo %>
+
+    <%= image_form.button :submit %>
+  <% end %>
+<% end %>
+

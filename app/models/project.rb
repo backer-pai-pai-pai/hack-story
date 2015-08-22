@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
-  belongs_to :user
-  has_many :project_items
+
+  belongs_to :owner, class_name: "User", foreign_key: :user_id
+  has_many :items, class_name: "ProjectItem"
 
   def self.import_today_construction
     json_obj = OpenApi.today_construction_obj

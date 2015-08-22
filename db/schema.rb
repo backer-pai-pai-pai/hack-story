@@ -51,6 +51,16 @@ ActiveRecord::Schema.define(version: 20150822075324) do
 
   add_index "projects", ["user_id"], name: "index_projects_on_user_id", using: :btree
 
+  create_table "user_profiles", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "user_profiles", ["user_id"], name: "index_user_profiles_on_user_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -72,4 +82,5 @@ ActiveRecord::Schema.define(version: 20150822075324) do
   add_foreign_key "images", "project_items"
   add_foreign_key "project_items", "projects"
   add_foreign_key "projects", "users"
+  add_foreign_key "user_profiles", "users"
 end
