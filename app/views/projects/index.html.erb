@@ -11,24 +11,23 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "註冊", "#" %></li>
-        <li><%= link_to "登入", "#" %></li>
+        <li><%= link_to "#" do %><i class="fa fa-pencil-square-o"></i> 註冊 <% end %></li>
+        <li><%= link_to "#" do %><i class="fa fa-sign-in"></i> 登入 <% end %></li>
+        <li><%= link_to "#" do %><i class="fa fa-sign-out"></i> 登出 <% end %></li>
       </ul>
     </div><!--/.navbar-collapse -->
   </div>
 </nav>
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<!-- <div class="jumbotron">
-  <div class="container">
-    <h1>Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-  </div>
-</div> -->
-
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
+  <div class="carousel-caption">
+    <h1>Hacker Story</h1>
+    <div class="box">
+      <div class="container-4">
+        <input type="search" id="search" placeholder="Search..." />
+        <button class="icon"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </div>
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -36,7 +35,6 @@
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="http://www.w3schools.com/bootstrap/img_chania2.jpg" alt="Chania">
@@ -67,7 +65,9 @@
 </div>
 
 <div class="container index_container">
-  <!-- Example row of columns -->
+  <div class="row category_title">
+    <i class="fa fa-clock-o"></i> Featured
+  </div>
   <div class="row">
     <div class="col-md-3 project">
       <div class="project_card">
@@ -112,7 +112,53 @@
       </div>
     </div>
   </div>
-
+  <div class="row category_title">
+    <i class="fa fa-star"></i> Featured
+  </div>
+  <div class="row">
+    <div class="col-md-3 project">
+      <div class="project_card">
+        <span class="hgpm-image-gradient"></span>
+        <%= image_tag "http://www.gannett-cdn.com/-mm-/b92ab206aae304eb74d90dfed7fe693d25aa1068/c=712-0-3544-2832&r=x233&c=210x230/local/-/media/2015/08/21/Reno/B9318549473Z.1_20150821201540_000_GE4BMMQ86.1-0.jpg" %>
+        <span class="project_description">Donec id elit non mi porta gra id elit non mi porta gravid id elit non mi porta gravid id elit non mi porta gravidvida at eget metus. Fusce dapibus, tellus ac cursusDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus</span>
+      </div>
+    </div>
+    <div class="col-md-3 project">
+      <div class="project_card">
+        <span class="hgpm-image-gradient"></span>
+        <%= image_tag "http://www.gannett-cdn.com/-mm-/b92ab206aae304eb74d90dfed7fe693d25aa1068/c=712-0-3544-2832&r=x233&c=210x230/local/-/media/2015/08/21/Reno/B9318549473Z.1_20150821201540_000_GE4BMMQ86.1-0.jpg" %>
+        <span class="project_description">Donec id elit non mi porta gra id elit non mi porta gravid id elit non mi porta gravid id elit non mi porta gravidvida at eget metus. Fusce dapibus, tellus ac cursusDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus</span>
+      </div>
+    </div>
+    <div class="col-md-3 project">
+      <div class="project_card">
+        <span class="hgpm-image-gradient"></span>
+        <%= image_tag "http://www.gannett-cdn.com/-mm-/b92ab206aae304eb74d90dfed7fe693d25aa1068/c=712-0-3544-2832&r=x233&c=210x230/local/-/media/2015/08/21/Reno/B9318549473Z.1_20150821201540_000_GE4BMMQ86.1-0.jpg" %>
+        <span class="project_description">Donec id elit non mi porta gra id elit non mi porta gravid id elit non mi porta gravid id elit non mi porta gravidvida at eget metus. Fusce dapibus, tellus ac cursusDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus</span>
+      </div>
+    </div>
+    <div class="col-md-3 project">
+      <div class="project_card">
+        <span class="hgpm-image-gradient"></span>
+        <%= image_tag "http://www.gannett-cdn.com/-mm-/b92ab206aae304eb74d90dfed7fe693d25aa1068/c=712-0-3544-2832&r=x233&c=210x230/local/-/media/2015/08/21/Reno/B9318549473Z.1_20150821201540_000_GE4BMMQ86.1-0.jpg" %>
+        <span class="project_description">Donec id elit non mi porta gra id elit non mi porta gravid id elit non mi porta gravid id elit non mi porta gravidvida at eget metus. Fusce dapibus, tellus ac cursusDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus</span>
+      </div>
+    </div>
+    <div class="col-md-3 project">
+      <div class="project_card">
+        <span class="hgpm-image-gradient"></span>
+        <%= image_tag "http://www.gannett-cdn.com/-mm-/b92ab206aae304eb74d90dfed7fe693d25aa1068/c=712-0-3544-2832&r=x233&c=210x230/local/-/media/2015/08/21/Reno/B9318549473Z.1_20150821201540_000_GE4BMMQ86.1-0.jpg" %>
+        <span class="project_description">Donec id elit non mi porta gra id elit non mi porta gravid id elit non mi porta gravid id elit non mi porta gravidvida at eget metus. Fusce dapibus, tellus ac cursusDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus</span>
+      </div>
+    </div>
+    <div class="col-md-3 project">
+      <div class="project_card">
+        <span class="hgpm-image-gradient"></span>
+        <%= image_tag "http://www.gannett-cdn.com/-mm-/b92ab206aae304eb74d90dfed7fe693d25aa1068/c=712-0-3544-2832&r=x233&c=210x230/local/-/media/2015/08/21/Reno/B9318549473Z.1_20150821201540_000_GE4BMMQ86.1-0.jpg" %>
+        <span class="project_description">Donec id elit non mi porta gra id elit non mi porta gravid id elit non mi porta gravid id elit non mi porta gravidvida at eget metus. Fusce dapibus, tellus ac cursusDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus</span>
+      </div>
+    </div>
+  </div>
   <hr>
 
   <footer>

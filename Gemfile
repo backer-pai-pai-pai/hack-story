@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
 gem "rails", '4.2.3'
 gem "pg"
 gem "sass-rails", '~> 5.0'
@@ -17,6 +16,7 @@ gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 
 gem "rest-client"
+gem "font-awesome-rails"
 
 gem "devise"
 gem "omniauth"
